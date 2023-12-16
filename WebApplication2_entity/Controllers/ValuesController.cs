@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using WebApplication2_entity.Data;
+using ClassLibrary1.Data;
 using WebApplication2_entity.Service;
 
 namespace WebApplication2_entity.Controllers

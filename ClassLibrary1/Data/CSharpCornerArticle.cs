@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace WebApplication2_entity.Data
+namespace ClassLibrary1.Data
 {
     [Table("example_table_entity")]
     public class CSharpCornerArticle

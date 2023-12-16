@@ -8,11 +8,11 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using WebApplication2_entity.Data;
 using Autofac.Integration.WebApi;
 using WebApplication2_entity.Service;
 using System.Configuration;
 using Microsoft.EntityFrameworkCore;
+using ClassLibrary1.Data;
 
 namespace WebApplication2_entity
 {
@@ -37,7 +37,9 @@ namespace WebApplication2_entity
                 .InstancePerLifetimeScope();
 
 
-            var connectionString = ConfigurationManager.ConnectionStrings["defaultConnection1"].ConnectionString;
+            //var connectionString = ConfigurationManager.ConnectionStrings["defaultConnection1"].ConnectionString;
+
+            var connectionString = ConfigurationManager.AppSettings["defaultConnection2"];
 
 
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
