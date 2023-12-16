@@ -31,6 +31,7 @@ namespace WebApplication2_entity.Controllers
         public void PostTestTable(CSharpCornerArticle article)
         {
             _appDbContext.Articles.Add(article);
+            _appDbContext.SaveChanges();
         }
 
         // GET api/values
